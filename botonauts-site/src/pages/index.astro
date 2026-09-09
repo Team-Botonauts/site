@@ -7,24 +7,48 @@ import "../styles/global.css";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Botonauts FTC Team</title>
   </head>
 
-  <body
-    class="flex min-h-screen items-center justify-center px-6 text-black"
-  >
-    <main class="relative w-full max-w-3xl py-16 text-center">
-
-      <div class="relative">
-
-        <h1 class="text-3xl font-black tracking-tight sm:text-5xl md:text-6xl">
-          Botonauts
-        </h1>
-
-        <p class="mt-6 text-lg text-slate-600">
-          Coming Soon
-        </p>
-      </div>
+  <body>
+    <main>
+      <section class="flex min-h-screen items-center justify-center">
+        <div class="text-center">
+          <p class="text-lg uppercase text-slate-500 font-semibold">We are</p>
+          <p class="text-4xl sm:text-5xl lg:text-7xl font-black pb-4">
+            Botonauts
+          </p>
+          <p class="text-2xl font-semibold">
+            Wiltshire, UK <span
+              class="text-2xl text-slate-500 font-semibold pt-3 pl-5"
+              >FTC Team 28578</span
+            >
+          </p>
+        </div>
+      </section>
+      <section class="bg-slate-300 px-6 py-20 sm:px-12 lg:px-20">
+        <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
+          <div>
+            <p class="text-4xl sm:text-5xl lg:text-6xl font-bold">About Us</p>
+          </div>
+          <div>
+            <p class="text-xl font-normal leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sem turpis, lacinia ullamcorper arcu a, sagittis
+              egestas diam. Integer hendrerit neque vitae nunc congue aliquam.
+              Nullam laoreet quam ac urna lacinia commodo vel vitae est. Nam
+              iaculis a mauris in varius. Pellentesque risus tortor, hendrerit
+              eu rutrum et, auctor sed velit. Aenean volutpat aliquet efficitur.
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
