@@ -1,16 +1,30 @@
 ---
+import "../styles/global.css";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <meta name="generator" content={Astro.generator} />
+    <title>Botonauts FTC Team</title>
   </head>
-  <body>
-    <h1>Botonauts</h1>
-	<h2>Coming Soon...</h2>
+
+  <body
+    class="flex min-h-screen items-center justify-center px-6 text-black"
+  >
+    <main class="relative w-full max-w-3xl py-16 text-center">
+
+      <div class="relative">
+
+        <h1 class="text-3xl font-black tracking-tight sm:text-5xl md:text-6xl">
+          Botonauts
+        </h1>
+
+        <p class="mt-6 text-lg text-slate-600">
+          Coming Soon
+        </p>
+      </div>
+    </main>
   </body>
 </html>
