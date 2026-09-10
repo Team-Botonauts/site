@@ -16,27 +16,59 @@ import "../styles/global.css";
 
   <body>
     <main>
-      <section class="flex min-h-screen items-center justify-center">
-        <div class="text-center">
-          <p class="text-lg uppercase text-slate-500 font-semibold">We are</p>
-          <p class="text-4xl sm:text-5xl lg:text-7xl font-black pb-4">
+      <section
+        class="relative flex min-h-screen items-center justify-center bg-[url('/images/team.jpg')] bg-cover bg-center px-6"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative text-center text-white">
+          <h2 class="text-lg uppercase text-slate-300 font-semibold">We are</h2>
+          <h1
+            class="text-7xl sm:text-8xl lg:text-9xl font-black pb-4 uppercase"
+          >
             Botonauts
-          </p>
-          <p class="text-2xl font-semibold">
+          </h1>
+          <h2 class="text-xl font-semibold">
             Wiltshire, UK <span
-              class="text-2xl text-slate-500 font-semibold pt-3 pl-5"
+              class="text-xl sm: text-slate-300 font-semibold pt-3 pl-5"
               >FTC Team 28578</span
             >
-          </p>
+          </h2>
         </div>
       </section>
-      <section class="bg-slate-300 px-6 py-20 sm:px-12 lg:px-20">
+
+      <section class="bg-orange-300 px-6 py-20 sm:px-12 lg:px-20">
         <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
           <div>
-            <p class="text-4xl sm:text-5xl lg:text-6xl font-bold">About Us</p>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase">
+              About Us
+            </h2>
           </div>
           <div>
-            <p class="text-xl font-normal leading-relaxed">
+            <p class="text-lg sm:text-xl font-normal leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sem turpis, lacinia ullamcorper arcu a, sagittis
+              egestas diam. Integer hendrerit neque vitae nunc congue aliquam.
+              Nullam laoreet quam ac urna lacinia commodo vel vitae est. Nam
+              iaculis a mauris in varius. Pellentesque risus tortor, hendrerit
+              eu rutrum et, auctor sed velit. Aenean volutpat aliquet efficitur.
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-100 px-6 py-20 sm:px-12 lg:px-20">
+        <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
+          <div class="md:order-2">
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase md:text-right"
+            >
+              Our Robot
+            </h2>
+          </div>
+          <div class="md:order-1">
+            <p class="text-lg sm:text-xl font-normal leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum sem turpis, lacinia ullamcorper arcu a, sagittis
               egestas diam. Integer hendrerit neque vitae nunc congue aliquam.
