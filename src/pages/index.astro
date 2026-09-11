@@ -10,6 +10,11 @@ import "../styles/global.css";
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
+    />
+
     <link rel="manifest" href="/site.webmanifest" />
     <title>Botonauts FTC Team</title>
   </head>
@@ -27,13 +32,44 @@ import "../styles/global.css";
           >
             Botonauts
           </h1>
-          <h2 class="text-xl font-semibold">
-            Wiltshire, UK <span
-              class="text-xl sm: text-slate-300 font-semibold pt-3 pl-5"
-              >FTC Team 28578</span
-            >
-          </h2>
+          <div class="flex justify-between">
+            <div class="flex">
+              <span class="material-symbols-outlined px-1"> location_on </span>
+              <h2 class="text-xl font-semibold">Wiltshire, UK</h2>
+            </div>
+            <h2 class="text-xl font-semibold text-slate-300">
+              FTC Team #28578
+            </h2>
+          </div>
         </div>
+        <a
+              class="group inline-flex items-center rounded-sm
+         text-xl font-semibold text-slate-300
+         transition-colors hover:text-white
+         focus-visible:outline-2 focus-visible:outline-offset-4
+         focus-visible:outline-cyan-400 absolute bottom-8 left-1/2 -translate-x-1/2"
+              href="https://ftcscout.org/teams/28578"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span
+                class="underline decoration-dotted decoration-slate-500
+           underline-offset-4 group-hover:decoration-cyan-400"
+              >
+                FTCScout
+              </span>
+
+              <span
+                aria-hidden="true"
+                class="material-symbols-outlined transition-transform
+           motion-safe:group-hover:-translate-y-0.5
+           motion-safe:group-hover:translate-x-0.5"
+              >
+                arrow_outward
+              </span>
+
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
       </section>
 
       <section class="bg-orange-300 px-6 py-20 sm:px-12 lg:px-20">
