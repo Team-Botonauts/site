@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+
+const { href, variant, class: className } = Astro.props;
+---
+
+<a
+  class="group inline-flex items-center rounded-sm
+         text-xl font-semibold
+         transition-colors
+         focus-visible:outline-2 focus-visible:outline-offset-4"
+  class:list={[
+    className,
+    {
+      "text-slate-300 hover:text-white focus-visible:outline-cyan-400":
+        variant == "gray",
+    },
+    {
+      "text-black focus-visible:outline-cyan-700": variant == "black",
+    },
+  ]}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span
+    class="underline decoration-dotted
+           underline-offset-4"
+    class:list={[
+      {
+        "decoration-slate-500 group-hover:decoration-cyan-400":
+          variant == "gray",
+      },
+      {
+        "decoration-black group-hover:decoration-cyan-700": variant == "black",
+      },
+    ]}
+  >
+    <slot />
+  </span>
+
+  <span
+    aria-hidden="true"
+    class="material-symbols-outlined transition-transform
+           motion-safe:group-hover:-translate-y-0.5
+           motion-safe:group-hover:translate-x-0.5"
+  >
+    arrow_outward
+  </span>
+
+  <span class="sr-only">(opens in a new tab)</span>
+</a>
