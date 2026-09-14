@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-const { href, variant, class: className } = Astro.props;
+const { href, newtab, external, variant, class: className } = Astro.props;
 ---
 
 <a
@@ -20,8 +20,8 @@ const { href, variant, class: className } = Astro.props;
     },
   ]}
   href={href}
-  target="_blank"
-  rel="noopener noreferrer"
+  target={newtab == "true" ? "_blank" : "_self" }
+  rel={external == "true" ? "external noopener noreferrer" : "noopener noreferrer"}
 >
   <span
     class="underline decoration-dotted
@@ -47,6 +47,4 @@ const { href, variant, class: className } = Astro.props;
   >
     arrow_outward
   </span>
-
-  <span class="sr-only">(opens in a new tab)</span>
 </a>

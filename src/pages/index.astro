@@ -1,5 +1,6 @@
 ---
 import Link from "../components/Link.astro";
+import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 ---
 
@@ -22,6 +23,7 @@ import "../styles/global.css";
 
   <body>
     <main>
+      <Navbar />
       <section
         class="relative flex min-h-screen items-center justify-center bg-[url('/images/team.jpg')] bg-cover bg-center px-6"
       >
@@ -33,11 +35,14 @@ import "../styles/global.css";
           >
             Botonauts
           </h1>
-          <div class="flex justify-between">
-            <div class="flex">
-              <span class="material-symbols-outlined px-1"> location_on </span>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-7"
+          >
+            <div class="group inline-flex items-center">
+              <span class="material-symbols-outlined pr-1"> location_on </span>
               <h2 class="text-xl font-semibold">Wiltshire, UK</h2>
             </div>
+
             <h2 class="text-xl font-semibold text-slate-300">
               FTC Team #28578
             </h2>
@@ -45,6 +50,8 @@ import "../styles/global.css";
         </div>
         <Link
           href="https://ftcscout.org/teams/28578"
+          newtab="true"
+          external="true"
           variant="gray"
           class="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
@@ -70,7 +77,9 @@ import "../styles/global.css";
               Pellentesque habitant morbi tristique senectus et netus et
               malesuada fames ac turpis egestas.
             </p>
-            <Link href="/" variant="black" class="pt-6">Learn More</Link>
+            <Link href="/team" newtab="false" variant="black" class="pt-6"
+              >Meet The Team</Link
+            >
           </div>
         </div>
       </section>
@@ -95,7 +104,9 @@ import "../styles/global.css";
               Pellentesque habitant morbi tristique senectus et netus et
               malesuada fames ac turpis egestas.
             </p>
-            <Link href="/" variant="black" class="pt-6">Learn More</Link>
+            <Link href="/" newtab="false" variant="black" class="pt-6"
+              >Learn More</Link
+            >
           </div>
         </div>
       </section>
