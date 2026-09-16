@@ -1,0 +1,76 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
+    />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Botonauts FTC Team - Meet The Team</title>
+  </head>
+
+  <body>
+    <main>
+      <Navbar />
+      <section
+        class="relative flex min-h-105 items-center justify-center
+         bg-[url('/images/group.jpg')] bg-cover bg-center px-6"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative text-center text-white">
+          <h2
+            class="pt-20 text-4xl font-bold uppercase sm:text-5xl lg:text-6xl"
+          >
+            Meet the Team
+          </h2>
+        </div>
+      </section>
+      <section
+        class="bg-linear-to-br from-slate-300 via-amber-200 to-orange-400 px-5 py-20 text-white"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col items-center rounded-3xl
+           border border-white/10 bg-white/5 px-6 py-12
+           shadow-2xl backdrop-blur-md backdrop-brightness-75 sm:px-10"
+        >
+          <!-- Engineering -->
+          <div class="w-full">
+            <h2
+              class="mb-10 text-center text-3xl font-bold uppercase tracking-wide sm:text-4xl"
+            >
+              Engineering
+            </h2>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Engineering team members -->
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-20 w-full">
+            <h2
+              class="mb-10 text-center text-3xl font-bold uppercase tracking-wide sm:text-4xl"
+            >
+              Social Media
+            </h2>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Social media team members -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
