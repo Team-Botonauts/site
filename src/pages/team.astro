@@ -1,4 +1,5 @@
 ---
+import MemberCard from "../components/MemberCard.astro";
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 ---
@@ -37,39 +38,18 @@ import "../styles/global.css";
         </div>
       </section>
       <section
-        class="bg-linear-to-br from-slate-300 via-amber-200 to-orange-400 px-5 py-20 text-white"
+        class="bg-linear-to-br from-slate-300 via-amber-200 to-orange-400 px-5 py-20 text-black"
       >
-        <div
-          class="mx-auto flex max-w-6xl flex-col items-center rounded-3xl
-           border border-white/10 bg-white/5 px-6 py-12
-           shadow-2xl backdrop-blur-md backdrop-brightness-75 sm:px-10"
-        >
-          <!-- Engineering -->
           <div class="w-full">
-            <h2
-              class="mb-10 text-center text-3xl font-bold uppercase tracking-wide sm:text-4xl"
-            >
-              Engineering
-            </h2>
-
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <!-- Engineering team members -->
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+               <MemberCard name="Thomas Edwards" img="/images/team/thomas.png" />
+               <MemberCard name="Henry Mann" img="/images/team/henry.png"/>
+               <MemberCard name="Arthur Ramsden" img="/images/team/arthur.png"/>
+               <MemberCard name="Nicolet Pegler" img="/images/team/nicolet.png"/>
+               <MemberCard name="Samuel Gregory" img="/images/team/samuel.png" class="lg:col-start-2"/>
+               <MemberCard name="Samantha Collier" img="/images/team/samantha.png"/>
             </div>
           </div>
-
-          <!-- Social Media -->
-          <div class="mt-20 w-full">
-            <h2
-              class="mb-10 text-center text-3xl font-bold uppercase tracking-wide sm:text-4xl"
-            >
-              Social Media
-            </h2>
-
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <!-- Social media team members -->
-            </div>
-          </div>
-        </div>
       </section>
     </main>
   </body>
