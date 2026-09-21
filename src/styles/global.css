@@ -10,6 +10,6 @@ h2 {
   font-family: "JetBrains Mono", monospace;
 }
 
-p {
+p, h4 {
     font-family: "Inter", sans-serif;
 }

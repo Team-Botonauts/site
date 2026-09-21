@@ -1,0 +1,71 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
+        />
+
+        <link rel="manifest" href="/site.webmanifest" />
+        <title>Botonauts FTC Team - Our Robot</title>
+    </head>
+
+    <body>
+        <main>
+            <Navbar />
+            <section
+                class="bg-linear-to-br from-white via-[#8FC9D4] to-[#07657F] px-5 py-20 text-black"
+            >
+                <div class="relative text-center">
+                    <h2
+                        class="pt-20 text-4xl font-bold uppercase sm:text-5xl lg:text-6xl"
+                    >
+                        Our Robot
+                    </h2>
+                </div>
+            </section>
+            <section class="px-5 py-20">
+                <div
+                    class="mx-auto grid w-full max-w-7xl gap-5 md:grid-cols-2"
+                >
+                    <div>
+                        <img src="/images/placeholder.png" alt="placeholder" class="w-lg h-lg" />
+                    </div>
+                    <div>
+                        <p
+                            class="text-lg sm:text-xl font-normal leading-relaxed"
+                        >
+                            This is our robot. It is currently a
+                            work-in-progress, so stay tuned to our social media
+                            for updates!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
