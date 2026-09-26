@@ -17,6 +17,13 @@ import "../styles/global.css";
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stint+Ultra+Condensed&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="manifest" href="/site.webmanifest" />
     <title>Botonauts FTC Team</title>
   </head>
@@ -29,9 +36,9 @@ import "../styles/global.css";
       >
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative text-center text-white">
-          <h2 class="text-lg uppercase text-slate-300 font-semibold">We are</h2>
+          <h2 class="text-lg uppercase text-slate-300 font-semibold font-mono">We are</h2>
           <h1
-            class="text-7xl sm:text-8xl lg:text-9xl font-black pb-4 uppercase"
+            class="text-7xl sm:text-8xl lg:text-9xl font-black font-display pb-4 uppercase"
           >
             Botonauts
           </h1>
@@ -40,10 +47,10 @@ import "../styles/global.css";
           >
             <div class="group inline-flex items-center">
               <span class="material-symbols-outlined pr-1"> location_on </span>
-              <h2 class="text-xl font-semibold">Wiltshire, UK</h2>
+              <h2 class="text-xl font-semibold font-mono">Wiltshire, UK</h2>
             </div>
 
-            <h2 class="text-xl font-semibold text-slate-300">
+            <h2 class="text-xl font-semibold text-slate-300 font-mono">
               FTC Team #28578
             </h2>
           </div>
@@ -59,10 +66,12 @@ import "../styles/global.css";
         </Link>
       </section>
 
-      <section class="bg-linear-to-br from-slate-300 via-amber-200 to-[#FB752D] px-6 py-20 sm:px-12 lg:px-20">
+      <section
+        class="bg-linear-to-br from-slate-300 via-orange-300 to-[#FB752D] px-6 py-20 sm:px-12 lg:px-20"
+      >
         <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
           <div>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-mono uppercase">
               About Us
             </h2>
           </div>
@@ -84,11 +93,13 @@ import "../styles/global.css";
         </div>
       </section>
 
-      <section class="bg-linear-to-br from-white via-[#8FC9D4] to-[#07657F] px-6 py-20 sm:px-12 lg:px-20">
+      <section
+        class="bg-linear-to-br from-white via-[#8FC9D4] to-[#07657F] px-6 py-20 sm:px-12 lg:px-20"
+      >
         <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
           <div class="md:order-2">
             <h2
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold uppercase md:text-right"
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold font-mono uppercase md:text-right"
             >
               Our Robot
             </h2>
@@ -110,6 +121,122 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
+      <section
+        class="bg-linear-to-br from-slate-50 via-slate-100 to-slate-200 px-6 py-20 sm:px-12 lg:px-20"
+      >
+        <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
+          <div>
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl pb-8 font-bold font-mono uppercase"
+            >
+              Contact Us
+            </h2>
+            <p class="text-lg sm:text-xl font-normal leading-relaxed">
+              We'd love to hear from you! Whether you are another team reaching
+              out, a potential sponsor, or just interested in our mission,
+              please don't hesitate to get in touch.
+            </p>
+          </div>
+          <div class="relative flex justify-center">
+            <form
+              id="contactform"
+              class="flex max-w-2xl w-full flex-col gap-5"
+            >
+              <div>
+                <label
+                  class="mb-2 block text-lg font-mono font-medium uppercase"
+                  for="name"
+                >
+                  Full Name
+                </label>
+
+                <input
+                  class="w-full border border-slate-300 bg-white px-4 py-3
+               shadow-sm outline-none transition
+             placeholder:text-slate-400
+             focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+                  type="text"
+                  id="name"
+                  name="name"
+                  maxlength="100"
+                  required
+                  autocomplete="name"
+                  placeholder="Your full name"
+                />
+              </div>
+
+              <div>
+                <label class="mb-2 block text-lg font-mono font-medium uppercase" for="email">
+                  Email Address
+                </label>
+
+                <input
+                  class="w-full border border-slate-300 bg-white px-4 py-3
+               shadow-sm outline-none transition
+             placeholder:text-slate-400
+             focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+                  type="email"
+                  id="email"
+                  name="email"
+                  maxlength="100"
+                  required
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <div>
+                <label class="mb-2 block text-lg font-mono font-medium uppercase" for="message">
+                  Message
+                </label>
+
+                <textarea
+                  class="min-h-40 w-full resize-y border border-slate-300
+             bg-white px-4 py-3 shadow-sm outline-none
+             transition placeholder:text-slate-400
+             focus:border-slate-500 focus:ring-2 focus:ring-slate-200"
+                  id="message"
+                  name="message"
+                  minlength="15"
+                  maxlength="3000"
+                  required
+                  placeholder="Your message"></textarea>
+
+                <p class="mt-1 text-sm text-slate-500">15 - 3000 characters</p>
+              </div>
+
+              <p
+                class="hidden border border-red-200 bg-red-50 px-4 py-3
+           text-red-700"
+                id="form_error"
+              >
+              </p>
+
+              <button
+                class="w-full bg-[#FB752D] px-6 py-3 font-medium text-white
+                font-mono uppercase
+           shadow-sm transition
+           hover:bg-amber-800
+           hover:cursor-pointer
+           focus:outline-none focus:ring-2 focus:ring-slate-400
+           focus:ring-offset-2
+           disabled:cursor-not-allowed disabled:opacity-50
+           sm:w-fit"
+                type="submit"
+                id="form_send_btn"
+              >
+                Send Message
+              </button>
+          
+            </form>
+            <div id="form_success" class="absolute inset-0 hidden flex-col items-center justify-center text-center">
+              <h3 class="text-green-800 font-bold text-2xl font-body pb-2">Message Sent</h3>
+              <p class="text-lg">You should hear back from us soon!</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="../scripts/contact.ts"></script>
   </body>
 </html>
