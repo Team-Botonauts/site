@@ -1,6 +1,7 @@
 ---
 import Link from "../components/Link.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro"
 import "../styles/global.css";
 ---
 
@@ -36,9 +37,11 @@ import "../styles/global.css";
       >
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative text-center text-white">
-          <h2 class="text-lg uppercase text-slate-300 font-semibold font-mono">We are</h2>
+          <h2 class="text-lg uppercase text-slate-300 font-semibold font-mono">
+            We are
+          </h2>
           <h1
-            class="text-7xl sm:text-8xl lg:text-9xl font-black font-display pb-4 uppercase"
+            class="text-7xl sm:text-8xl lg:text-9xl font-black font-display tracking-wide pb-4 uppercase"
           >
             Botonauts
           </h1>
@@ -71,20 +74,15 @@ import "../styles/global.css";
       >
         <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
           <div>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-mono uppercase">
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold font-mono pb-8 uppercase"
+            >
               About Us
             </h2>
           </div>
           <div>
             <p class="text-lg sm:text-xl font-normal leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum sem turpis, lacinia ullamcorper arcu a, sagittis
-              egestas diam. Integer hendrerit neque vitae nunc congue aliquam.
-              Nullam laoreet quam ac urna lacinia commodo vel vitae est. Nam
-              iaculis a mauris in varius. Pellentesque risus tortor, hendrerit
-              eu rutrum et, auctor sed velit. Aenean volutpat aliquet efficitur.
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
+              We are Botonauts, a team of Year 12 students at St John's Marlborough who compete in the FIRST Tech Challenge.
             </p>
             <Link href="/team" newtab="false" variant="black" class="pt-6"
               >Meet The Team</Link
@@ -106,14 +104,7 @@ import "../styles/global.css";
           </div>
           <div class="md:order-1">
             <p class="text-lg sm:text-xl font-normal leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum sem turpis, lacinia ullamcorper arcu a, sagittis
-              egestas diam. Integer hendrerit neque vitae nunc congue aliquam.
-              Nullam laoreet quam ac urna lacinia commodo vel vitae est. Nam
-              iaculis a mauris in varius. Pellentesque risus tortor, hendrerit
-              eu rutrum et, auctor sed velit. Aenean volutpat aliquet efficitur.
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
+              Every year, there is a new objective that brings on design challenges. Follow us as we engineer our robot for the 2026-27 BIOBUZZ™ Season.
             </p>
             <Link href="/robot" newtab="false" variant="black" class="pt-6"
               >Learn More</Link
@@ -121,6 +112,30 @@ import "../styles/global.css";
           </div>
         </div>
       </section>
+
+      <section
+        class="bg-linear-to-br bg-white px-6 py-20 h-full sm:px-12 lg:px-20"
+      >
+        <div class="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-2">
+          <div>
+            <h2
+              class="text-4xl pb-8 sm:text-5xl lg:text-6xl font-bold font-mono uppercase"
+            >
+              Fundraising
+            </h2>
+            <p class="text-lg sm:text-xl font-normal leading-relaxed">
+              This year, St John's are running two FTC teams! Please help us fund our robots and transportation, so that we can go one better this time and become National Champions!
+            </p>
+          </div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/botonauts-fundraiser-20262027/widget/medium?attribution_id=sl%3Ad0d88c32-28d4-457b-8d9a-847396de3a03"
+          >
+          </div><script defer src="https://www.gofundme.com/static/js/embed.js"
+          ></script>
+        </div>
+      </section>
+
       <section
         class="bg-linear-to-br from-slate-50 via-slate-100 to-slate-200 px-6 py-20 sm:px-12 lg:px-20"
       >
@@ -132,16 +147,15 @@ import "../styles/global.css";
               Contact Us
             </h2>
             <p class="text-lg sm:text-xl font-normal leading-relaxed">
-              We'd love to hear from you! Whether you are another team reaching
-              out, a potential sponsor, or just interested in our mission,
-              please don't hesitate to get in touch.
+              We'd love to hear from you!<br />
+
+              Whether you're another robotics team, a potential sponsor, or simply someone who
+              wants to find out more about what we do, please get in touch.<br
+              />
             </p>
           </div>
           <div class="relative flex justify-center">
-            <form
-              id="contactform"
-              class="flex max-w-2xl w-full flex-col gap-5"
-            >
+            <form id="contactform" class="flex max-w-2xl w-full flex-col gap-5">
               <div>
                 <label
                   class="mb-2 block text-lg font-mono font-medium uppercase"
@@ -166,7 +180,10 @@ import "../styles/global.css";
               </div>
 
               <div>
-                <label class="mb-2 block text-lg font-mono font-medium uppercase" for="email">
+                <label
+                  class="mb-2 block text-lg font-mono font-medium uppercase"
+                  for="email"
+                >
                   Email Address
                 </label>
 
@@ -186,7 +203,10 @@ import "../styles/global.css";
               </div>
 
               <div>
-                <label class="mb-2 block text-lg font-mono font-medium uppercase" for="message">
+                <label
+                  class="mb-2 block text-lg font-mono font-medium uppercase"
+                  for="message"
+                >
                   Message
                 </label>
 
@@ -227,15 +247,20 @@ import "../styles/global.css";
               >
                 Send Message
               </button>
-
             </form>
-            <div id="form_success" class="absolute inset-0 hidden flex-col items-center justify-center text-center">
-              <h3 class="text-green-800 font-bold text-2xl font-body pb-2">Message Sent</h3>
+            <div
+              id="form_success"
+              class="absolute inset-0 hidden flex-col items-center justify-center text-center"
+            >
+              <h3 class="text-green-800 font-bold text-2xl font-body pb-2">
+                Message Sent
+              </h3>
               <p class="text-lg">You should hear back from us soon!</p>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </main>
     <script src="../scripts/contact.ts"></script>
   </body>

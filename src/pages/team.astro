@@ -1,44 +1,31 @@
 ---
 import MemberCard from "../components/MemberCard.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro"
 import "../styles/global.css";
 ---
 
 <html lang="en">
   <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
-        />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stint+Ultra+Condensed&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stint+Ultra+Condensed&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Botonauts FTC Team - Meet The Team</title>
   </head>
 
@@ -59,20 +46,19 @@ import "../styles/global.css";
         </div>
       </section>
       <section
-        class="bg-linear-to-br from-slate-300 via-amber-200 to-[#FB752D] px-5 py-20 text-black"
+        class="flex justify-center bg-linear-to-br from-slate-300 via-amber-200 to-[#FB752D] px-5 py-20 text-black"
       >
-          <div class="w-full">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-               <MemberCard name="Thomas Edwards" img="/images/team/thomas.png" />
-               <MemberCard name="Henry Mann" img="/images/team/henry.png"/>
-               <MemberCard name="Arthur Ramsden" img="/images/team/arthur.png"/>
-               <MemberCard name="Nicolet Pegler" img="/images/team/nicolet.png"/>
-               <MemberCard name="Samuel Gregory" img="/images/team/samuel.png" class="lg:col-start-2"/>
-               <MemberCard name="Samantha Collier" img="/images/team/samantha.png"/>
-               <MemberCard name="Edward Thomas" img="/images/team/samantha.png"/>
-            </div>
-          </div>
+        <div class="flex flex-wrap max-w-4xl gap-3 sm:gap-6 justify-center">
+          <MemberCard name="Arthur Ramsden" img="/images/team/arthur.jpg"><p>Engineering Lead</p><p>CAD Technician</p></MemberCard>
+          <MemberCard name="Edward Thomas" img="/images/team/edward.jpg"><p>Intake Engineer</p></MemberCard>
+          <MemberCard name="Henry Mann" img="/images/team/henry.jpg"><p>Engineer</p><p>Software Developer</p></MemberCard>
+          <MemberCard name="Nicolet Pegler" img="/images/team/nicolet.jpg"><p>Documentation</p><p>Social Media</p></MemberCard>
+          <MemberCard name="Samantha Collier" img="/images/team/samantha.jpg"></MemberCard>
+          <MemberCard name="Samuel Gregory" img="/images/team/samuel.jpg"><p>Outtake Engineer</p></MemberCard>
+          <MemberCard name="Thomas Edwards" img="/images/team/thomas.jpg"><p>Web Lead</p><p>CAD Technician</p></MemberCard>
+        </div>
       </section>
+      <Footer />
     </main>
   </body>
 </html>

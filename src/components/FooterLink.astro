@@ -1,0 +1,20 @@
+---
+import "../styles/global.css";
+
+const { href, newtab, external, class: className } = Astro.props;
+---
+
+<a
+  class="group inline-flex items-center rounded-sm
+         text-sm font-bold font-body
+         transition-colors
+         focus-visible:outline-2 focus-visible:outline-offset-4
+         text-slate-300 hover:text-white focus-visible:outline-cyan-400"
+  href={href}
+  target={newtab == "true" ? "_blank" : "_self"}
+  rel={external == "true"
+    ? "external noopener noreferrer"
+    : "noopener noreferrer"}
+>
+  <slot />
+</a>

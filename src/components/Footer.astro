@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+import FooterLink from "../components/FooterLink.astro";
+---
+
+<footer class="flex px-20 py-12 bg-slate-600 text-gray-300">
+    <div class="flex justify-between w-full">
+        <div>
+            <img src="/images/botonauts_logo_text.png" class="h-20" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <FooterLink
+                href="/"
+                newtab="false"
+                external="false"
+            >
+                Home
+            </FooterLink>
+            <FooterLink
+                href="/team"
+                newtab="false"
+                external="false"
+            >
+                Meet The Team
+            </FooterLink>
+            <FooterLink
+                href="/robot"
+                newtab="false"
+                external="false"
+            >
+                Our Robot
+            </FooterLink>
+        </div>
+        <div class="flex flex-col gap-1">
+            <FooterLink
+                href="https://ftcscout.org/teams/28578"
+                newtab="true"
+                external="true"
+            >
+                FTCScout
+            </FooterLink>
+            <FooterLink
+                href="https://www.youtube.com/@Teambotonauts"
+                newtab="true"
+                external="true"
+            >
+                YouTube
+            </FooterLink>
+            <FooterLink
+                href="https://www.gofundme.com/f/botonauts-fundraiser-20262027"
+                newtab="true"
+                external="true"
+            >
+                GoFundMe
+            </FooterLink>
+        </div>
+        <div>
+            <p>© Botonauts FTC Team 2026</p>
+        </div>
+
+        
+    </div>
+</footer>
