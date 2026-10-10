@@ -3,31 +3,11 @@ import Link from "../components/Link.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro"
 import "../styles/global.css";
+import PageHead from "../components/PageHead.astro"
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stint+Ultra+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on,arrow_outward,keyboard_double_arrow_down"
-    />
-
-
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Botonauts FTC Team</title>
-  </head>
+  <PageHead>Botonauts FTC Team</PageHead>
 
   <body>
     <main>
@@ -46,20 +26,20 @@ import "../styles/global.css";
             Botonauts
           </h1>
           <div
-            class="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-7"
+            class="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-7 text-md sm:text-xl"
           >
             <div class="group inline-flex items-center">
               <span class="material-symbols-outlined pr-1">location_on</span>
-              <h2 class="text-xl font-semibold font-mono">Wiltshire, UK</h2>
+              <h2 class="font-semibold font-mono">Wiltshire, UK</h2>
             </div>
 
-            <h2 class="text-xl font-semibold text-slate-300 font-mono">
+            <h2 class="font-semibold text-slate-300 font-mono">
               FTC Team #28578
             </h2>
           </div>
         </div>
         <div class="flex flex-col gap-2 items-center absolute bottom-12 md:bottom-20 left-1/2 -translate-x-1/2 text-slate-300">
-          <p class="font-semibold text-lg w-max">Scroll to find out more</p>
+          <p class="font-semibold text-md sm:text-lg w-max">Scroll to find out more</p>
           <span class="material-symbols-outlined">keyboard_double_arrow_down</span>
         </div>
       </section>
