@@ -7,7 +7,14 @@ import PageHead from "../components/PageHead.astro"
 ---
 
 <html lang="en">
-  <PageHead>Botonauts FTC Team</PageHead>
+  <PageHead>
+    <title>Botonauts - FTC Robotics Team</title>
+    <meta
+      name="description"
+      content="Botonauts is a UK FIRST Tech Challenge robotics team. Meet our team, explore our robots, and follow our FTC journey."
+    />
+    <link rel="canonical" href="https://botonauts.uk/" />
+  </PageHead>
 
   <body>
     <main>
@@ -17,9 +24,9 @@ import PageHead from "../components/PageHead.astro"
       >
       <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative text-center text-white">
-          <h2 class="text-lg uppercase text-slate-300 font-semibold font-mono">
+          <p class="text-lg uppercase text-slate-300 font-semibold font-mono">
             We are
-          </h2>
+          </p>
           <h1
             class="text-7xl sm:text-8xl lg:text-9xl font-black font-display tracking-wide pb-4 uppercase"
           >
@@ -30,12 +37,12 @@ import PageHead from "../components/PageHead.astro"
           >
             <div class="group inline-flex items-center">
               <span class="material-symbols-outlined pr-1">location_on</span>
-              <h2 class="font-semibold font-mono">Wiltshire, UK</h2>
+              <p class="font-semibold font-mono">Wiltshire, UK</p>
             </div>
 
-            <h2 class="font-semibold text-slate-300 font-mono">
+            <p class="font-semibold text-slate-300 font-mono">
               FTC Team #28578
-            </h2>
+            </p>
           </div>
         </div>
         <div class="flex flex-col gap-2 items-center absolute bottom-12 md:bottom-20 left-1/2 -translate-x-1/2 text-slate-300">
@@ -81,7 +88,7 @@ import PageHead from "../components/PageHead.astro"
           </div>
           <div>
             <p class="text-lg sm:text-xl font-normal leading-relaxed">
-              There is more to the FIRST Tech Challenge than building robots. Outreach is a key part of our team, where we connect with our school and local community as a team. This allows our team to become more than just a school club, but something that is valued within our community.
+              There is more to the FIRST Tech Challenge than building robots. Outreach is a key part of our team, where we share the world of STEM with students in school and our local local community.
             </p>
           </div>
         </div>
@@ -98,7 +105,7 @@ import PageHead from "../components/PageHead.astro"
               Robot
           </h2>
             <p class="text-lg sm:text-xl font-normal leading-relaxed">
-              Every year, there is a new objective that brings on design challenges. Follow us as we engineer our robot for the 2026-27 BIOBUZZ™ Season.
+              Every year, there is a new objective that brings on design challenges. Follow us as we engineer our robot for the 2026-27 BIOBUZZ Season.
             </p>
             <Link href="/robot" newtab="false" variant="black" class="pt-6"
               >Learn More</Link
@@ -145,7 +152,7 @@ import PageHead from "../components/PageHead.astro"
               We'd love to hear from you!<br />
 
               Whether you're another robotics team, a potential sponsor, or simply someone who
-              wants to find out more about what we do, please get in touch.<br
+              wants to find out more about what we do, please get in touch!<br
               />
             </p>
           </div>
